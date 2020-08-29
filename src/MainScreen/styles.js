@@ -1,0 +1,118 @@
+import React from 'react';
+import {StyleSheet, Dimensions} from 'react-native';
+
+const { height, width } = Dimensions.get('window')
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#121212',
+    paddingBottom:10
+  },
+  listHeader:{
+    height:height*0.4,
+    width:'100%',
+    backgroundColor:'#1e1e1e'
+  },
+  city:{
+    flex:1,
+  },
+  cityTxt:{
+    color:'#fff',
+    fontSize:30,
+    fontWeight:"bold"
+  },
+  country:{
+    color:'#fff',
+    fontSize:20,
+    fontWeight:"400",
+    lineHeight:30
+  },
+  detailsContainer:{
+    position:'absolute',
+    zIndex:1,
+    bottom:10,
+    left:10
+  },
+  cards:{
+    padding:20,
+    width:"95%",
+    backgroundColor:"#1e1e1e",
+    marginTop:10,
+    alignSelf:'center',
+    borderRadius:10,
+    flexDirection:'row'
+  },
+  days:{
+    color:"#fff",
+    fontSize:22,
+    fontWeight:"600"
+  },
+  date:{
+    color:"#fff",
+    fontSize:18,
+  },
+  innerCard:{
+   flex:1
+  },
+  tempView:{
+    flex:1,
+    alignItems:"flex-end",
+  },
+  cloud:{
+    alignSelf:"flex-end",
+    position:'absolute',
+    right:10
+  },
+  tempTxt:{
+    color:'#fff',
+    fontSize:40,
+    fontWeight:"bold",
+    padding:0
+  },
+  weatherIcon:{
+    height:30,
+    width:50
+  },
+  errorConatiner:{
+    flex:1,
+    padding:10,
+    justifyContent:'center',
+  },
+  errorTxt:{
+    color:"#fff",
+    fontSize:60,
+    fontWeight:"bold"
+  },
+  msgText:{
+    color:'#fff',
+    fontSize:20,
+    marginTop:10
+  },
+  loaderView:{
+    position:'absolute',
+    zIndex:2,
+    top:0,
+    left:0,
+    right:0,
+    bottom:0,
+    backgroundColor:'#121212'
+  },
+  retryBtn:{
+    marginTop:10,
+    height:40,
+    width:100,
+    justifyContent:'center',
+    alignItems:'center',
+    backgroundColor:"#D81536"
+  },
+  retryTxt:{
+    color:"#fff",
+    fontSize:18
+  },
+  max_min:{
+    fontSize:15,
+    color:"#fff"
+  }
+});
+
+export default styles;
